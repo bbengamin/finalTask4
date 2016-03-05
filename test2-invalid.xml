@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Input XML document. This XML is valid against Test.xsd XML schema-->
+
+<st4:Constraint xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:st4="http://localhost:8080/SummaryTask4/xml"
+		xsi:schemaLocation="http://localhost:8080/SummaryTask4/xml input.xsd">		
+	
+		<name>Login</name>
+		<maxLength>20</maxLength>
+		<minLength>3</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>Password</name>
+		<maxLength>50</maxLength>
+		<minLength>5</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>OldPassword</name>
+		<maxLength>50</maxLength>
+		<minLength>5</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>NewPassword</name>
+		<maxLength>50</maxLength>
+		<minLength>5</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>ConfPassword</name>
+		<maxLength>50</maxLength>
+		<minLength>5</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>HashPassword</name>
+		<maxLength>32</maxLength>
+		<minLength>32</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>Email</name>
+		<maxLength>40</maxLength>
+		<minLength>5</minLength>	
+		<notNull>true</notNull>
+		<mustContains>@,.</mustContains>
+	</Field>		
+	<Field>
+		<name>FirstName</name>
+		<maxLength>20</maxLength>
+		<minLength>3</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+	<Field>
+		<name>LastName</name>
+		<maxLength>20</maxLength>
+		<minLength>3</minLength>	
+		<notNull>true</notNull>
+		<mustContains></mustContains>
+	</Field>		
+</st4:Constraint>

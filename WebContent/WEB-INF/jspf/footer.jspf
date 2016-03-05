@@ -1,0 +1,9 @@
+<%--=========================================================================== 
+Footer (bottom area). 
+===========================================================================--%>
+<div class="navbar-fixed-bottom row-fluid">
+	<div class="navbar-inner">
+		<p class="text-center">Testing (SummaryTask4, EPAM-KNURE Java
+			Training), 2015</p>
+	</div>
+</div>

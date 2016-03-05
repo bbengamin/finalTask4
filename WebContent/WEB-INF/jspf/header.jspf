@@ -1,0 +1,76 @@
+<%--=========================================================================== 
+Header (top area). 
+===========================================================================--%> 
+
+<%@ page import="ua.nure.bogdanov.SummaryTask4.db.Role" %>
+<%@ include file="/WEB-INF/jspf/directive/page.jspf" %>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<%-- TOP NAVIGATION BAR --%>
+<div class="navbar navbar-fixed-top">
+	<div id="head" class="navbar-inner" >
+	    <div class="container">
+			<c:if test="${not empty sessionScope.user}">
+	    		<a href="controller?command=profile">
+			    	<div class="brand">
+						<fmt:message key='header_jspf.hello_mes1'/> ${user.firstName}
+						<c:if test="${not empty userRole}">
+							<fmt:message key='header_jspf.hello_mes2'/> ${userRole.name}
+						</c:if>
+					</div>
+				</a>
+				<ul class="nav pull-right">
+					<li><a href="mail.jsp"><fmt:message key='header_jspf.mail'/></a></li>
+					<li><a href="settings.jsp"><fmt:message key='header_jspf.settings'/></a></li>
+					<li><a href="controller?command=logout"><fmt:message key='header_jspf.logout'/></a></li>
+				</ul>
+			</c:if>
+			<c:if test="${empty user and title ne 'Login'}">
+				<ul class="nav pull-right"><li><a href="login.jsp"><fmt:message key='header_jspf.login'/></a></li></ul>
+			</c:if>
+			<c:if test="${empty user and title eq 'Login'}">
+				<ul class="nav pull-right"><li><a href="register.jsp"><fmt:message key='header_jspf.register'/></a></li></ul>
+			</c:if>
+		</div>
+	</div>
+</div>
+<%-- TOP NAVIGATION BAR --%>
+<%-- <div class="hero-unit">
+	<p class="text-center">Testing system</p>
+</div>--%>
+<%-- LEFT NAVIGATION BAR --%>
+
+<c:if test="${ not empty user}">
+<div id="leftmenu" class="span2 fixed-left">
+<div id="menulist" >
+<ul  class="nav nav-pills nav-stacked">
+	<c:choose>
+		<%-- ANDMIN MENU --%>
+		<c:when test="${userRole.name == 'admin' }">
+			<li><a href="controller?command=updateTestForm"><fmt:message key='header_jspf.create_test'/></a></li>
+			<li><a href="controller?command=listSubjects"><fmt:message key='header_jspf.subjects'/></a></li>
+			<li><a href="controller?command=listTests"><fmt:message key='header_jspf.tests'/></a></li>
+			<li><a href="controller?command=listUsers"><fmt:message key='header_jspf.users'/></a></li>
+			<li><a href="controller?command=profile"><fmt:message key='header_jspf.profile'/></a></li>
+			<li><a href="controller?command=stats"><fmt:message key='header_jspf.stats'/></a></li>
+		</c:when>
+		<%-- ANDMIN MENU --%>
+		<%-- USER MENU --%>
+		<c:when test="${userRole.name == 'student'}">
+			<li><a href="controller?command=listTests"><fmt:message key='header_jspf.tests'/></a></li>
+			<li><a href="controller?command=profile"><fmt:message key='header_jspf.profile'/></a></li>
+		</c:when>
+		<%-- USER MENU --%>
+	</c:choose>
+</ul>
+</div>
+</div>
+</c:if>
+<%-- LEFT NAVIGATION BAR --%>
+
+
+
+
+

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<st4:Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:st4="http://localhost:8080/SummaryTask4/xml"
+	xsi:schemaLocation="http://localhost:8080/SummaryTask4/xml http://localhost:8080/SummaryTask4/xml/input.xsd">
+	<Question>
+		<QuestionText>Сколько всего было крестражей?</QuestionText>
+		<Answer>5</Answer>
+		<Answer>10</Answer>
+		<Answer correct="true">7</Answer>
+		<Answer>2</Answer>
+	</Question>
+	<Question>
+		<QuestionText>Как звали змею «Того-Кого-Нельзя-Называть»</QuestionText>
+		<Answer correct="true">Нагайна</Answer>
+		<Answer>Каа</Answer>
+		<Answer>Просто змея</Answer>
+	</Question>
+	<Question>
+		<QuestionText>Каким из даров смерти владел отец Гарри?</QuestionText>
+		<Answer>Палочка</Answer>
+		<Answer correct="true">Мантия невидимка</Answer>
+		<Answer>Воскрешающий камень</Answer>
+	</Question>
+</st4:Test>

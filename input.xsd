@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://localhost:8080/SummaryTask4/xml" xmlns:tns="http://localhost:8080/SummaryTask4/xml">
+
+	<xsd:element name="Constraint">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Field" type="tns:Field" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="Field">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="maxLength" type="xsd:integer" />
+			<xsd:element name="minLength" type="xsd:integer" />
+			<xsd:element name="notNull" type="xsd:boolean" default="false" />
+			<xsd:element name="mustContains" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

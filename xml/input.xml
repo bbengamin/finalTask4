@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<st4:Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:st4="http://localhost:8080/SummaryTask4/xml"
+	xsi:schemaLocation="http://localhost:8080/SummaryTask4/xml http://localhost:8080/SummaryTask4/xml/input.xsd">
+	<Question>
+		<QuestionText>Какое сейчас время суток?</QuestionText>
+		<Answer>День</Answer>
+		<Answer correct="true">Ночь</Answer>
+	</Question>
+	<Question>
+		<QuestionText>Сколь будет 12 - 7</QuestionText>
+		<Answer>8</Answer>
+		<Answer>очень много</Answer>
+		<Answer correct="true">5</Answer>
+		<Answer correct="true">пять</Answer>
+	</Question>
+	<Question>
+		<QuestionText>Добро всегда побеждает</QuestionText>
+		<Answer>ночные кошмары</Answer>
+		<Answer correct="true">зло</Answer>
+		<Answer>простуду</Answer>
+	</Question>
+</st4:Test>

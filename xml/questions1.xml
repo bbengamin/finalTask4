@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<st4:Test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:st4="http://localhost:8080/SummaryTask4/xml"
+	xsi:schemaLocation="http://localhost:8080/SummaryTask4/xml http://localhost:8080/SummaryTask4/xml/input.xsd">
+	<Question>
+		<QuestionText>Как звучит традиционное прощание джедаев</QuestionText>
+		<Answer>Удачи)</Answer>
+		<Answer correct="true">Да прибудет с тобой сила</Answer>
+		<Answer correct="true">May the Forth be with you</Answer>
+		<Answer>Пока пока)</Answer>
+	</Question>
+	<Question>
+		<QuestionText>Как звали астрособота Энакина</QuestionText>
+		<Answer correct="true">R2-D2</Answer>
+		<Answer>Кастрюля</Answer> 
+		<Answer>Пылесос</Answer>
+	</Question>
+</st4:Test>
